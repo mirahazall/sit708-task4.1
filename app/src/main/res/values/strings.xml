@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TaskManagerApp</string>
+    <string name="tasks_to_do">TASKS TO DO</string>
+    <string name="add_new_task">Add New Task</string>
+    <string name="view_my_tasks">View My Tasks</string>
+    <string name="edit_tasks">Edit Tasks</string>
+    <string name="my_task_manager">MY TASK MANAGER</string>
+    <string name="create_tasks">CREATE TASKS</string>
+    <string name="task_description">Task Description:</string>
+    <string name="task_description_hint">Task Description</string>
+    <string name="task_title">Task Title:</string>
+    <string name="task_title_hint">Task Title</string>
+    <string name="due_date">Due Date:</string>
+    <string name="create_task_button">Create Task</string>
+    <string name="enter_due_date_here">Enter due date here</string>
+    <string name="enter_due_date_here1">Enter due date</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+</resources>

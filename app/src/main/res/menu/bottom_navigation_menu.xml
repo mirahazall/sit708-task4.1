@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item
+        android:id="@+id/navigation_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_view_tasks"
+        android:title="View" />
+
+    <item
+        android:id="@+id/navigation_add_task"
+        android:title="Add" />
+
+    <item
+        android:id="@+id/navigation_edit_task"
+        android:title="Edit" /> -->
+</menu>
