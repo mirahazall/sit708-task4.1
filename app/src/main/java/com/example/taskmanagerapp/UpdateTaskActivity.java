@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -73,10 +72,8 @@ public class UpdateTaskActivity extends AppCompatActivity {
                 // Update the task in the database
                 dataSource.updateTask(taskToUpdate.getId(), newTitle, newDescription, newDueDate);
 
-// Show a toast message indicating the task has been updated
+               // Show a toast message indicating the task has been updated
                 Toast.makeText(UpdateTaskActivity.this, "Task updated successfully", Toast.LENGTH_SHORT).show();
-
-
                 finish();
             }
         });
@@ -95,7 +92,6 @@ public class UpdateTaskActivity extends AppCompatActivity {
                         dataSource.deleteTask(taskToUpdate.getId());
                         // Show a toast message indicating the task has been deleted
                         Toast.makeText(UpdateTaskActivity.this, "Task deleted successfully", Toast.LENGTH_SHORT).show();
-                        // Optionally, you can navigate back to the previous activity
                         finish();
                     }
                 });

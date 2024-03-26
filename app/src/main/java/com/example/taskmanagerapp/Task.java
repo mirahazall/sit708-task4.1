@@ -34,6 +34,4 @@ public class Task{
     public String toString() {
         return "Title: " + title + "\nDescription: " + description + "\nDue Date: " + dueDate;
     }
-
-
 }

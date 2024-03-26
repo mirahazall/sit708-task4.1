@@ -6,12 +6,9 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.taskmanagerapp.R;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
 import java.util.List;
 
 public class ViewTasksActivity extends AppCompatActivity {

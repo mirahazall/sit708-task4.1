@@ -61,7 +61,7 @@ public class TaskDataSource {
     }
 
     private Task cursorToTask(Cursor cursor) {
-// Retrieve column indices
+
         int idIndex = cursor.getColumnIndex(TaskContract.TaskEntry._ID); // Retrieve column index for task ID
         int titleIndex = cursor.getColumnIndex(TaskContract.TaskEntry.COLUMN_TITLE);
         int descriptionIndex = cursor.getColumnIndex(TaskContract.TaskEntry.COLUMN_DESCRIPTION);
@@ -75,13 +75,10 @@ public class TaskDataSource {
             String description = cursor.getString(descriptionIndex);
             String dueDate = cursor.getString(dueDateIndex);
 
-            // Create and return a Task object
             return new Task(id, title, description, dueDate);
 
-            // Now you can use the retrieved values
         } else {
-            // Handle case where one or more columns are not found
-            return null; // or throw an exception, depending on your requirements
+            return null; 
         }
     }
 
@@ -133,6 +130,4 @@ public class TaskDataSource {
 
         return task;
     }
-
-
 }

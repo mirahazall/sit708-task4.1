@@ -11,13 +11,9 @@ import android.widget.Toast;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.ArrayList;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class EditTasksActivity extends AppCompatActivity {
@@ -30,7 +26,6 @@ public class EditTasksActivity extends AppCompatActivity {
     TaskDataSource dataSource;
     Task taskToUpdate;
     private BottomNavigationView bottomNavigationView;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +59,6 @@ public class EditTasksActivity extends AppCompatActivity {
 
         */
 
-
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, tasks);
         listViewTasks.setAdapter(adapter);
 
@@ -94,8 +88,6 @@ public class EditTasksActivity extends AppCompatActivity {
         super.onDestroy();
         dataSource.close();
     }
-
-
 }
 
 

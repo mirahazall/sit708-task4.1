@@ -1,10 +1,8 @@
 package com.example.taskmanagerapp;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Button;
@@ -84,7 +82,6 @@ public class AddTasksActivity extends AppCompatActivity {
                 dueDateEditText.setError("Due date cannot be empty");
                 return false;
             }
-
 
             return true;
         }

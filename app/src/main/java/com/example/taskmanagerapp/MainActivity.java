@@ -6,27 +6,20 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
-
 import com.example.taskmanagerapp.R;
-
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.ActionBarDrawerToggle;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
-
 
 public class MainActivity extends AppCompatActivity  {
     private BottomNavigationView bottomNavigationView;
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +35,6 @@ public class MainActivity extends AppCompatActivity  {
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-
 
         TextView homeNav = findViewById(R.id.home_nav);
         homeNav.setOnClickListener(new View.OnClickListener() {
@@ -67,15 +59,12 @@ public class MainActivity extends AppCompatActivity  {
             }
         });
 
-
-
         TextView editNav = findViewById(R.id.edit_nav);
         editNav.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, EditTasksActivity.class));
             }
-
         });
 
        /* bottomNavigationView = findViewById(R.id.bottom_navigation);
@@ -135,4 +124,4 @@ public class MainActivity extends AppCompatActivity  {
         }
         return super.onOptionsItemSelected(item);
     }
-    }
+}
